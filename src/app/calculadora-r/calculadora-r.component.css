@@ -1,0 +1,185 @@
+div{
+    font-family: 'Silkscreen', cursive;
+}
+#textof{
+    font-family: 'Orbitron', sans-serif;
+}
+#num{
+    font-family: 'Silkscreen', cursive;
+}
+#print{
+   background-color: orange;
+   border-style: dashed;
+}
+
+
+.bg-5{
+    background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%);
+  }
+ 
+        .animated-shadow {
+        color: #ffffff;
+        height: 140px;
+        left: 0;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        animation: move linear 2000ms infinite;
+        z-index: 2
+        }
+        /*Animación para rotar las sombras*/
+        @keyframes move {
+        0% {
+            text-shadow:
+            4px -4px 0 #da0641,
+            3px -3px 0 #da0641,
+            2px -2px 0 #da0641,
+            1px -1px 0 #da0641,
+            -4px 4px 0 #13f1fc,
+            -3px 3px 0 #13f1fc,
+            -2px 2px 0 #13f1fc,
+            -1px 1px 0 #13f1fc
+            ;
+        }
+        25% {
+            text-shadow:
+            -4px -4px 0 #13f1fc,
+            -3px -3px 0 #13f1fc,
+            -2px -2px 0 #13f1fc,
+            -1px -1px 0 #13f1fc,
+            4px 4px 0 #da0641,
+            3px 3px 0 #da0641,
+            2px 2px 0 #da0641,
+            1px 1px 0 #da0641
+            ;
+        }
+        50% {
+            text-shadow:
+            -4px 4px 0 #da0641,
+            -3px 3px 0 #da0641,
+            -2px 2px 0 #da0641,
+            -1px 1px 0 #da0641,
+            4px -4px 0 #13f1fc,
+            3px -3px 0 #13f1fc,
+            2px -2px 0 #13f1fc,
+            1px -1px 0 #13f1fc
+            ;
+        }
+        75% {
+            text-shadow:
+            4px 4px 0 #13f1fc,
+            3px 3px 0 #13f1fc,
+            2px 2px 0 #13f1fc,
+            1px 1px 0 #13f1fc,
+            -4px -4px 0 #da0641,
+            -3px -3px 0 #da0641,
+            -2px -2px 0 #da0641,
+            -1px -1px 0 #da0641
+            ;
+        }
+        100% {
+            text-shadow:
+            4px -4px 0 #da0641,
+            3px -3px 0 #da0641,
+            2px -2px 0 #da0641,
+            1px -1px 0 #da0641,
+            -4px 4px 0 #13f1fc,
+            -3px 3px 0 #13f1fc,
+            -2px 2px 0 #13f1fc,
+            -1px 1px 0 #13f1fc
+            ;
+        }
+    }
+
+
+
+
+
+
+
+.negro{
+
+    background-color:black;
+    color: white;
+
+}
+.cafe{
+
+    background-color:brown;
+    color: white;
+    
+
+}
+.rojo{
+
+    background-color:red;
+    color: white;
+    
+
+}
+.naranja{
+
+    background-color:orange;
+    color: white;
+    
+
+}
+.amarillo{
+
+    background-color:yellow;
+    color: black;
+    
+
+}
+.verde{
+
+    background-color:green;
+    color: white;
+    
+
+}
+.azul{
+
+    background-color:blue;
+    color: white;
+    
+
+}
+.violeta{
+
+    background-color:violet;
+    color: white;
+    
+
+}
+.gris{
+
+    background-color:gray;
+    color: white;
+    
+
+}
+.blanco{
+
+    background-color:white;
+}
+
+#dorado{
+
+    color:gold;
+
+}
+#plateado{
+
+    color: silver;
+
+}
+
+#resistencia1{
+
+width: 600px;
+height: 300px;
+
+}
+

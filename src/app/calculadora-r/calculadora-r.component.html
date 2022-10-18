@@ -1,0 +1,137 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  
+<div class="jumbotron">
+  <div class="bg-5" class="container text-center">
+    <h1 class="animated-shadow">Resistencias-Angular</h1>      
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+  
+  <div class="row">
+    <div>
+      <img src="../assets/img/Resistenciak.png" id="resistencia1">
+      <br><br>
+      
+      <div class="row">
+      <div class="col-sm-4">
+        <h2  [style.color]="colorl">{{banda1}}</h2>
+      </div>
+      <div class="col-sm-4">
+        <h2  [style.color]="colorl1">{{banda2}}</h2>
+      </div>
+      <div class="col-sm-4">
+        <h2  [style.color]="colorl2">{{banda3}}</h2>
+      </div>
+      <br>
+     
+    </div>
+    </div>
+
+    <div class="col-sm-4">
+      <p>Cifra 1</p>
+            <label for="banda1">Color 1:</label>
+            <select name="banda1" [(ngModel)]="banda1">
+              <option value="0"  class="negro" >Negro</option>
+              <option value="10" class="cafe" >Café</option>
+              <option value="20" class="rojo" >Rojo</option>
+              <option value="30" class="naranja" >Naranja</option>
+              <option value="40" class="amarillo" >Amarillo</option>
+              <option value="50" class="verde" >Verde</option>
+              <option value="60" class="azul" >Azul</option>
+              <option value="70" class="violeta" >Violeta</option>
+              <option value="80" class="gris" >Gris</option>
+              <option value="90" class="blanco" >Blanco</option>
+            </select>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Cifra 2</p>
+            <label for="">Color 2:</label>
+            <select name="banda2" [(ngModel)]="banda2">
+              <option value="0" class="negro" >Negro</option>
+              <option value="1" class="cafe" >Café</option>
+              <option value="2" class="rojo" >Rojo</option>
+              <option value="3" class="naranja" >Naranja</option>
+              <option value="4" class="amarillo" >Amarillo</option>
+              <option value="5" class="verde" >Verde</option>
+              <option value="6" class="azul" >Azul</option>
+              <option value="7" class="violeta" >Violeta</option>
+              <option value="8" class="gris" >Gris</option>
+              <option value="9" class="blanco" >Blanco</option>
+            </select>
+    </div>
+    <div class="col-sm-4">
+      <p>Multiplicador</p>
+          <form >
+            <label for="">Color Multiplicador:</label>
+            <select name="banda3" [(ngModel)]="banda3">
+              <option value="1" class="negro">Negro</option>
+              <option value="10" class="cafe">Café</option>
+              <option value="100" class="rojo">Rojo</option>
+              <option value="1000" class="naranja">Naranja</option>
+              <option value="10000" class="amarillo">Amarillo</option>
+              <option value="100000" class="verde">Verde</option>
+              <option value="1000000" class="azul">Azul</option>
+              <option value="10000000" class="violeta">Violeta</option>
+              <option value="100000000" class="gris">Gris</option>
+              <option value="1000000000" class="blanco" >Blanco</option>
+            </select>
+          </form>
+    </div>
+    
+  </div>
+
+  <div class="col-sm-3">
+    <br>
+    <br>
+    <br>
+    <!--
+    <div class="col-sm-3">
+   
+    <h2  [style.color]="colorl3">{{tolerancia}}</h2>
+    </div>
+    -->
+    <h5>Tolerancia</h5>
+    
+    <div> 
+      <label for="tolerancia" id="dorado">Dorado (5%)</label>
+      <br>
+      <input class="form-check-input" type="radio" name="tolerancia" [(ngModel)]="tolerancia"  value="0">
+    </div>
+      <br><br>
+    <div>
+      <label for="tolerancia" id="plateado">Plateado (10%)</label>
+      <br>
+      <input class="form-check-input" type="radio" name="tolerancia"  [(ngModel)]="tolerancia" value="1">
+    </div>
+    <br><br>
+
+    <div class="form-floating mb-3" style="vertical-align: middle;">
+      <button type="button" class="btn btn-secondary" (click)="calculadoraR()">Calcular</button>
+    </div>
+
+  </div>
+ 
+</div><br>
+
+<div id="print" class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-4" *ngIf="valorhom">
+      
+      
+      <h3 id="textof">Valor de Resistencia: <h2 id="num">{{homs}}</h2>  </h3>
+    </div>
+    <div class="col-sm-4" *ngIf="valorMax"> 
+      <h3 id="textof">Valor máximo de resistencia es: <h2 id="num">{{tolMax}}</h2> </h3>
+    </div>
+    <div class="col-sm-4" *ngIf="valorMin">
+      <h3 id="textof">Valor mínimo de resistencia es: <h2 id="num">{{tolMin}}</h2></h3>
+    </div>
+  </div>
+</div><br><br>
